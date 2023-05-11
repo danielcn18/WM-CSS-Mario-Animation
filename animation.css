@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/image3.17.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    /* overflow: hidden; */
+}
+#mario{
+    background-image: url(./images/image4.5.png);
+    margin: 75vh 0 0 0;
+    height: 150px;
+    width: 130px;
+    animation: mario .6s steps(2) infinite, marioMove 5s linear infinite;
+}
+#koopa{
+    background-image: url(./mages/image5.2.png);
+    position: absolute;
+    margin: -17vh 0 0 69vw;
+    height: 150px;
+    width: 130px;
+    animation: koopa 1s steps(2) infinite, koopaMove 4s linear infinite;
+}
+/* #hammerbro{
+    background-image: url(/Images/image6.1.png);
+    margin: -25vh 0 0 0;
+    height: 150px;
+    width: 90px;
+    animation: hammerbro 1s steps(2) infinite, hammerbroMove 6s linear infinite;
+} */
+#lakitu{
+    background-image: url(./images/image7.2.png);
+    /* position: absolute; */
+    margin: -77vh 0 0 0vw;
+    height: 150px;
+    width: 130px;
+    animation: lakitu 1s steps(1) infinite, lakituMove 12s linear infinite;
+}
+@keyframes mario{
+    0%{
+        background-position: 150px;
+    }
+    100%{
+        background-position: 1000px;
+    }
+}
+@keyframes marioMove{
+    0%{
+        transform: translateX(-130px);
+    }
+    30%{
+        transform: translateX(700px);
+    }
+    35%{
+        transform: translateX(780px) translateY(-100px);
+    }
+    40%{
+        transform: translateX(850px) translateY(-140px);
+    }
+    45%{       
+        transform: translateX(950px) translateY(-150px);
+    }
+    50%{       
+        transform: translateX(950px) translateY(-150px);
+    }
+    50.1%{       
+        transform: translateX(950px) translateY(-150px) scaleX(-1);
+    }
+    60%{       
+        transform: translateX(600px) translateY(-400px) scaleX(-1);
+    }
+    70%{       
+        transform: translateX(500px) translateY(-300px) scaleX(-1);
+    }
+    80%{       
+        transform: translateX(300px) translateY(-300px) scaleX(-1);
+    }
+    90%{       
+        transform: translateX(150px) translateY(-300px) scaleX(-1);
+    }
+    95%{       
+        transform: translateX(50px) translateY(0px) scaleX(-1);
+    }
+    100%{
+        transform: translateX(-170px) translateY(0px) scaleX(-1);
+    }
+
+    
+}
+@keyframes koopa{
+    0%{
+        background-position: 150px;
+    }
+    100%{
+        background-position: 1000px;
+    }
+}
+@keyframes koopaMove{
+    0%{
+        transform: translateX(0px);
+    }
+    49.9%{
+        transform: translateX(225px);
+    }
+    50%{
+        transform: translateX(225px) scaleX(-1);
+    }
+    100%{
+        transform: translateX(0) scaleX(-1);
+    }
+}
+@keyframes hammerbro{
+    0%{
+        background-position: 355px;
+    }
+    100%{
+        background-position: 1000px;
+    }
+}
+@keyframes hammerbroMove{
+    0%{
+        transform: translateX(0px);
+    }
+    49.9%{
+        transform: translateX(225px);
+    }
+    50%{
+        transform: translateX(225px) scaleX(-1);
+    }
+    100%{
+        transform: translateX(0) scaleX(-1);
+    }
+}
+@keyframes lakitu{
+    0%{
+        background-position: 190px;
+    }
+    100%{
+        background-position: 1000px;
+    }
+}
+@keyframes lakituMove{
+    0%{
+        transform: translateX(-150px) scaleX(-1);
+    }
+    5%{
+        transform: translateX(125px) translateY(-10px) scaleX(-1);
+    }
+    10%{
+        transform: translateX(325px) scaleX(-1);
+    }
+    15%{
+        transform: translateX(725px) translateY(-30px) scaleX(-1);
+    }
+    20%{
+        transform: translateX(1300px) translateY(35px) scaleX(-1);
+    }
+    20.01%{
+        transform: translateX(1300px) translateY(35px);
+    }
+    70%{
+        transform: translateX(880px) translateY(-5px);
+    }
+    80%{
+        transform: translateX(490px) translateY(0px);
+    }
+    99.99%{
+        transform: translateX(725px) translateY(-30px);
+    }
+    100%{
+       transform: translateX(-150px);
+    }
+}
