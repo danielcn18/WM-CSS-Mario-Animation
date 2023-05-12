@@ -1,21 +1,20 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(./images/image3.17.png);
+    background-image: url(./images/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    /* overflow: hidden; */
 }
 #mario{
-    background-image: url(./images/image4.5.png);
+    background-image: url(./images/marioSprite.png);
     margin: 75vh 0 0 0;
     height: 150px;
     width: 130px;
     animation: mario .6s steps(2) infinite, marioMove 5s linear infinite;
 }
 #koopa{
-    background-image: url(./mages/image5.2.png);
+    background-image: url(./images/koopaSprite.png);
     position: absolute;
     margin: -17vh 0 0 69vw;
     height: 150px;
@@ -30,7 +29,7 @@ body{
     animation: hammerbro 1s steps(2) infinite, hammerbroMove 6s linear infinite;
 } */
 #lakitu{
-    background-image: url(./images/image7.2.png);
+    background-image: url(./images/lakituSprite.png);
     /* position: absolute; */
     margin: -77vh 0 0 0vw;
     height: 150px;
